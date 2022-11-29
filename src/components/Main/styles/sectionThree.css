@@ -1,0 +1,115 @@
+.section-three {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.section-three_inside {
+  display: flex;
+  width: 100%;
+  margin: 30px 120px;
+  justify-content: space-between;
+}
+.section-three_inside-block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.section-three_inside-block h3 {
+  display: flex;
+  align-self: flex-start;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 6rem;
+}
+.angry-grid {
+  display: grid;
+  width: 100%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  gap: 30px;
+  height: 100vh;
+}
+
+#item-0 {
+  background-image: url(../../../assets/frameOne.svg);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  grid-row-start: 1;
+  grid-column-start: 1;
+
+  grid-row-end: 5;
+  grid-column-end: 3;
+}
+#item-1 {
+  background-image: url(../../../assets/frameTwo.svg);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  grid-row-start: 1;
+  grid-column-start: 3;
+
+  grid-row-end: 3;
+  grid-column-end: 6;
+}
+#item-2 {
+  background-image: url(../../../assets/frameThree.svg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  grid-row-start: 1;
+  grid-column-start: 6;
+
+  grid-row-end: 3;
+  grid-column-end: 9;
+}
+#item-3 {
+  background-image: url(../../../assets/frameFour.svg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  grid-row-start: 3;
+  grid-column-start: 3;
+
+  grid-row-end: 5;
+  grid-column-end: 6;
+}
+#item-4 {
+  background-image: url(../../../assets/frameFive.svg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  grid-row-start: 3;
+  grid-column-start: 6;
+
+  grid-row-end: 5;
+  grid-column-end: 9;
+}
+#item-5 {
+  background-image: url(../../../assets/frameSix.svg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  grid-row-start: 5;
+  grid-column-start: 1;
+
+  grid-row-end: 7;
+  grid-column-end: 3;
+}
+#item-6 {
+  background-image: url(../../../assets/frameSeven.svg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  grid-row-start: 5;
+  grid-column-start: 3;
+
+  grid-row-end: 7;
+  grid-column-end: 6;
+}
+#item-7 {
+  background-image: url(../../../assets/frameEight.svg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  grid-row-start: 5;
+  grid-column-start: 6;
+
+  grid-row-end: 7;
+  grid-column-end: 9;
+}

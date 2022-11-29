@@ -1,0 +1,33 @@
+.section-one{
+    display: flex;
+    width: 100%;
+  align-items: center;
+    justify-content: space-between;
+  }
+  .section-one_inside{
+      display: flex;
+      width: 100%;
+      margin: 30px 120px;
+      justify-content: space-between;
+  }
+  .section-one_inside-left{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    justify-content: center;
+
+  }
+  .section-one_inside-left span{
+    font-weight: 400;
+    color: #009985;
+    font-size: 1.5rem;
+  }
+  .section-one_inside-left h1{
+    font-weight: 800;
+    font-size: 4.5rem;
+  }
+  .section-one_inside-rigth{
+display: flex;
+width: 35%;
+align-items: flex-end;
+  }
