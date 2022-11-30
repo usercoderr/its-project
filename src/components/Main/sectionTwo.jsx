@@ -30,9 +30,9 @@ export default function SectionTwo() {
           </div>
           <h3>{t("create_websites")}</h3>
           <p className="itc-p">{t("itc")}</p>
-          <h3>{t("funs")}</h3>
+          <h3  className="gap">{t("funs")}</h3>
           <h5>{t("braves")}</h5>
-          <p>{t("other")}</p>
+          <p className="itc-p">{t("other")}</p>
         </div>
       </div>
     </section>
