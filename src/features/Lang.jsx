@@ -24,7 +24,7 @@ export default function Lang() {
   ];
 
   return (
-    <div onClick={handleChangeLang}>
+    <div className="lang" onClick={handleChangeLang}>
       {isEng ? (
         <>
           {languageRu.map(({ code, name }) => (
