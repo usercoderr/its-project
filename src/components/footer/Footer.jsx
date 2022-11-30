@@ -7,7 +7,10 @@ export default function Footer() {
       <div className="footer">
       <div className="footer-inside">
         <div className="footer-logo">
+        <a href="#">
+
           <img src={logo} alt="" />
+        </a>
         </div>
         <div className="footer-links">
           <ul>

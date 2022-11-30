@@ -7,7 +7,7 @@ import "./styles/sectionTwo.css";
 export default function SectionTwo() {
   return (
     <section className="section-two">
-      <div className="section-two_inside">
+      <div id="about_us" className="section-two_inside">
         <div className="section-two_inside-block">
           <h3>теперь о бизнесе</h3>
           <h2>Наши проекты решают ряд бизнес-задач</h2>

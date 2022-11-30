@@ -8,19 +8,22 @@ export default function Header() {
   return (
     <header>
       <div className="header">
+      <a href="#">
+
         <img src={logo} alt="" />
+      </a>
         <ul>
           <li>
             <a href="#">{t("main")}</a>
           </li>
           <li>
-            <a href="#">{t("about_us")}</a>
+            <a href="#about_us">{t("about_us")}</a>
           </li>
           <li>
             <a href="#portfolio">{t("portfolio")}</a>
           </li>
           <li>
-            <a href="#">{t("contacts")}</a>
+            <a href="#contacts">{t("contacts")}</a>
           </li>
         </ul>
         <Lang/>

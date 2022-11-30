@@ -4,7 +4,7 @@ export default function SectionFive() {
   return (
     <section className="section-five">
       <div className="section-five_inside">
-        <div className="section-five_inside-block">
+        <div id="contacts" className="section-five_inside-block">
           <h3>ПЕРЕХОДИМ К ДЕЙСТВИЯМ</h3>
           <h2>Разрешите нам создать лучший сайт в вашей нише</h2>
           <div className="section-five_inside-contacts">
