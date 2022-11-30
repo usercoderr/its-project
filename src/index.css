@@ -34,7 +34,7 @@ header {
 .header {
   display: flex;
   width: 100%;
-  margin: 10px 120px;
+  margin: 30px 120px;
   align-items: center;
   justify-content: space-between;
 }
@@ -69,30 +69,43 @@ footer {
   align-items: center;
   justify-content: space-between;
 }
+.footer img {
+  width: 84px;
+  height: 73px;
+}
 .footer-inside{
   display: flex;
   width: 100%;
   margin: 10px 120px;
-  align-items: center;
+  align-items: flex-end;
   margin-bottom: 80px;
   justify-content: space-between;
 }
 .footer-logo{
   display: flex;
-  width: 20%;
+  width: 10%;
   justify-content: flex-start;
 }
  .footer-links{
   display: flex;
-  flex-wrap: wrap;
+  align-items: flex-end;
   height: auto;
-  flex-direction: column;
-  width: 80%;
+  width: 86%;
+  gap: 26px;
 }
-.footer-links a{
+.footer-links a {
   display: flex;
-  width: 100%;
+  align-items: flex-end;
+  font-size: 3rem;
+}
+.footer-links a:first-child {
+  display: flex;
   align-items: center;
+}
+.footer-links img {
+  width: 37.5px;
+  height: 37.5px;
+  margin: 5px;
 }
 .footer-links ul{
   display: flex;
