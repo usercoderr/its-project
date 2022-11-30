@@ -4,14 +4,14 @@ import logo from "../../assets/logo.svg";
 import Lang from "../../features/Lang";
 
 export default function Header() {
-  const {t} = useTranslation()
+  const { t } = useTranslation()
   return (
     <header>
       <div className="header">
-      <a href="#">
-
-        <img src={logo} alt="" />
-      </a>
+        <a href="#">
+        {/* width="104" height="93"  */}
+          <img src={logo} alt="" />
+        </a>
         <ul>
           <li>
             <a href="#">{t("main")}</a>
@@ -26,7 +26,7 @@ export default function Header() {
             <a href="#contacts">{t("contacts")}</a>
           </li>
         </ul>
-        <Lang/>
+        <Lang />
       </div>
     </header>
   );

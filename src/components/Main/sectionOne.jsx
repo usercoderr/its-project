@@ -14,7 +14,6 @@ export default function SectionOne() {
           <h1>{t("digital")}</h1>
           <div className="section-one_button">
             <span>{t("send")}</span>
-            <div className="border-line-button"></div>
           </div>
         </div>
         <div className="section-one_inside-right">

@@ -38,6 +38,10 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+.header img {
+  width: 84px;
+  height: 73px;
+}
 .header ul {
   display: flex;
   width: 50%;
@@ -47,6 +51,8 @@ header {
   justify-content: space-between;
 }
 .lang{
+  font-size: 1.4rem;
+  font-weight: 700;
   cursor: pointer;
 }
 footer {
