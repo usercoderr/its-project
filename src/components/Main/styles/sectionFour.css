@@ -10,7 +10,7 @@
 .section-four_inside {
   display: flex;
   width: 100%;
-  margin: 30px 200px;
+  margin: 30px 180px;
   justify-content: space-between;
 }
 .section-four_inside-block {
@@ -29,6 +29,16 @@
 .section-four_inside-block-map {
   display: flex;
   width: 100%;
+  flex-wrap: wrap;
 
   justify-content: space-between;
+}
+.section-box{
+  box-sizing: border-box;;
+  width: auto;
+  display: flex;
+  
+  margin: 20px;
+  align-items: center;
+  height:auto;
 }

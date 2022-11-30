@@ -10,7 +10,7 @@ export default function SectionFour() {
           <h3>Наши счастливые клиенты</h3>
           <div className="section-four_inside-block-map">
             {logos.map((company) => (
-              <div key={company.id}>{company.name}</div>
+              <div className="section-box" key={company.id}><img src={company.img} alt="" /></div>
             ))}
           </div>
         </div>
