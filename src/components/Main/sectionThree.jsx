@@ -14,7 +14,7 @@ export default function SectionThree() {
       <div className="section-three_inside">
         <div className="section-three_inside-block">
           <h3>{t("products")}</h3>
-          <div class="angry-grid">
+          <div className="angry-grid">
             <div id="item-0">&nbsp;</div>
             <div id="item-1">&nbsp;</div>
             <div id="item-2">&nbsp;</div>
