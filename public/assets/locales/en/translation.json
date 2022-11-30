@@ -2,5 +2,9 @@
   "main": "Main",
   "about_us": "About Us",
   "portfolio": "Portfolio",
-    "contacts": "Contacts"
+  "contacts": "Contacts",
+  "digital": "Digital technologies and IT solutions",
+  "development": "Development, implementation and technical support",
+  "mobile_dev": "Development of web applications, corporate solutions, mobile applications",
+  "address": "Kyrgyz Republic, Bishkek Bishkek, Chokmorov str. 254, sq. 71"
 }

@@ -1,6 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "./styles/sectionFive.css";
 export default function SectionFive() {
+  const {t} = useTranslation()
+
   return (
     <section className="section-five">
       <div className="section-five_inside">
@@ -9,9 +12,9 @@ export default function SectionFive() {
           <h2>Разрешите нам создать лучший сайт в вашей нише</h2>
           <div className="section-five_inside-contacts">
             <div className="section-five_inside-contacts-left">
-              <p>info@its-tech.org</p>
-              <a href="tel:+996500123456">0 500 123 456</a>
-              <span>901 N Pitt Str., Suite 170 Alexandria, VA 22314, USA</span>
+              <p>office@its-tech.org</p>
+              <a href="tel:+996 312 973777">+996 312 973777</a>
+              <span>{t("address")}</span>
             </div>
             <div className="section-five_inside-contacts-center">
               <span>Отправить заявку</span>

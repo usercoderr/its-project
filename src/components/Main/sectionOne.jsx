@@ -1,14 +1,17 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import sectionOne from "../../assets/sectionOne.svg";
 import "./styles/sectionOne.css";
 
 export default function SectionOne() {
+  const {t} = useTranslation()
+
   return (
     <section className="section-one">
       <div className="section-one_inside">
         <div className="section-one_inside-left">
-          <span>Разработка, внедрение и техническое сопровождение</span>
-          <h1>Цифровые технологии и IT-решения</h1>
+          <span>{t("development")}</span>
+          <h1>{t("digital")}</h1>
           <div className="section-one_button">
             <span>Отправить заяку</span>
             <div className="border-line-button"></div>

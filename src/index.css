@@ -83,6 +83,11 @@ footer {
   flex-direction: column;
   width: 80%;
 }
+.footer-links a{
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
 .footer-links ul{
   display: flex;
   width: 40%;

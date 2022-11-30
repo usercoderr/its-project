@@ -1,4 +1,10 @@
 import React from "react";
+import { AiFillLinkedin } from 'react-icons/ai'
+import { AiFillTwitterSquare } from 'react-icons/ai'
+import { AiFillFacebook } from 'react-icons/ai'
+import { AiFillYoutube } from 'react-icons/ai'
+import { AiFillBehanceSquare } from 'react-icons/ai'
+import { FiInstagram} from 'react-icons/fi'
 import logo from "../../assets/logo.svg";
 
 export default function Footer() {
@@ -15,24 +21,36 @@ export default function Footer() {
         <div className="footer-links">
           <ul>
             <li>
-              <a href="#">LinkedIn</a>
+              <a href="#">
+              <AiFillLinkedin color="#0A66C2" fontSize='1.5rem'/>
+              LinkedIn</a>
             </li>
             <li>
-              <a href="#">Twitter</a>
+              <a href="#">
+              <AiFillTwitterSquare color="#00acee" fontSize='1.5rem'/>
+              Twitter</a>
             </li>
             <li>
-              <a href="#">Facebook</a>
+              <a href="#">
+              <AiFillFacebook color="#0165E1" fontSize='1.5rem'/>
+              Facebook</a>
             </li>
           </ul>
           <ul>
             <li>
-              <a href="#">Instagram</a>
+              <a href="#">
+              <FiInstagram color="#cd486b" fontSize='1.5rem'/>
+              Instagram</a>
             </li>
             <li>
-              <a href="#">YouTube</a>
+              <a href="#">
+              <AiFillYoutube color="#FF0000" fontSize='1.5rem'/>
+              YouTube</a>
             </li>
             <li>
-              <a href="#">Behance</a>
+              <a href="#">
+              <AiFillBehanceSquare color="#131418" fontSize='1.5rem'/>
+              Behance</a>
             </li>
           </ul>
         </div>
