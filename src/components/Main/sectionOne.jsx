@@ -13,7 +13,7 @@ export default function SectionOne() {
           <span>{t("development")}</span>
           <h1>{t("digital")}</h1>
           <div className="section-one_button">
-            <span>Отправить заяку</span>
+            <span>{t("send")}</span>
             <div className="border-line-button"></div>
           </div>
         </div>

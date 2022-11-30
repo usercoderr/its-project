@@ -1,7 +1,10 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 import "./styles/sectionThree.css";
 
 export default function SectionThree() {
+  const {t} = useTranslation()
+
     const [isOpen, setOpen] = useState(false)
     const handleClick = () =>{
         setOpen(!isOpen)
@@ -10,7 +13,7 @@ export default function SectionThree() {
     <section id="portfolio" className="section-three">
       <div className="section-three_inside">
         <div className="section-three_inside-block">
-          <h3>Наши проекты</h3>
+          <h3>{t("products")}</h3>
           <div class="angry-grid">
             <div id="item-0">&nbsp;</div>
             <div id="item-1">&nbsp;</div>
@@ -24,7 +27,7 @@ export default function SectionThree() {
           <br />
          {
             !isOpen &&
-         <button onClick={handleClick}>показать еще</button>
+         <button onClick={handleClick}>{t("showButton")}</button>
          } 
           {
             isOpen ? <div class="angry-grid">
@@ -41,7 +44,7 @@ export default function SectionThree() {
           <br />
           {
             isOpen && 
-         <button onClick={handleClick}>свернуть</button>
+         <button onClick={handleClick}>{t("hiddenButton")}</button>
           }
 
         </div>

@@ -8,8 +8,8 @@ export default function SectionFive() {
     <section className="section-five">
       <div className="section-five_inside">
         <div id="contacts" className="section-five_inside-block">
-          <h3>ПЕРЕХОДИМ К ДЕЙСТВИЯМ</h3>
-          <h2>Разрешите нам создать лучший сайт в вашей нише</h2>
+          <h3>{t("move")}</h3>
+          <h2>{t("allow")}</h2>
           <div className="section-five_inside-contacts">
             <div className="section-five_inside-contacts-left">
               <p>office@its-tech.org</p>
@@ -17,11 +17,11 @@ export default function SectionFive() {
               <span>{t("address")}</span>
             </div>
             <div className="section-five_inside-contacts-center">
-              <span>Отправить заявку</span>
+              <span>{t("send")}</span>
               <div className="border-line"></div>
             </div>
             <div className="section-five_inside-contacts-right">
-              <span>Наша презентация</span>
+              <span>{t("present")}</span>
               <div className="border-line"></div>
 
             </div>
