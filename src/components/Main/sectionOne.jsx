@@ -10,7 +10,7 @@ export default function SectionOne() {
           <span>Разработка, внедрение и техническое сопровождение</span>
           <h1>Цифровые технологии и IT-решения</h1>
           <div className="section-one_button">
-            <span>Отправить заявку</span>
+            <span>Отправить заяку</span>
             <div className="border-line-button"></div>
           </div>
         </div>
