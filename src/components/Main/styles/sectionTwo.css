@@ -82,3 +82,32 @@
   width: 24%;
   text-align: center;
 }
+
+
+@media screen and (max-width: 1440px) {
+  .section-two h2{
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
+  .section-two_inside-images-left {
+    width: 33%;
+    text-align: center;
+  }
+  .section-two_inside-images-center {
+    width: 35%;
+    text-align: center;
+  }
+  .section-two_inside-images-right {
+    width: 30%;
+    text-align: center;
+  }
+  .section-two_inside-block p{
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+  }
+  .section-two h5{
+    font-size: 3.5rem;
+    line-height: 4rem;
+  }
+}

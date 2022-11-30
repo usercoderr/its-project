@@ -44,8 +44,35 @@
   font-weight: 800;
   font-size: 4.5rem;
 }
-.section-one_inside-rigth {
+.section-one_inside-right {
   display: flex;
-  width: 35%;
+  width: 50%;
   align-items: flex-end;
+  justify-content: flex-end;
+}
+.banner{
+  /* width="593" height="690" */
+  width: 593px;
+  height: 690px;
+}
+
+
+@media screen and (max-width: 1440px) {
+  .banner{
+    /* width="593" height="690" */
+    width: 493px;
+    height: 590px;
+  }
+  .section-one_inside-right {
+    display: flex;
+    width: 40%;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .section-one_inside-left h1 {
+    margin: 20px 0px;
+    font-weight: 800;
+    font-size: 3.5rem;
+    line-height: 5rem;
+  }
 }
