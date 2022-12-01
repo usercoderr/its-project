@@ -4,6 +4,9 @@ import "./styles/sectionFive.css";
 export default function SectionFive() {
   const {t} = useTranslation()
 
+  const send = t("send").length
+  const present = t("present").length
+
   return (
     <section className="section-five">
       <div className="section-five_inside">
@@ -17,11 +20,10 @@ export default function SectionFive() {
               <span>{t("address")}</span>
             </div>
             <div className="section-five_inside-contacts-center">
-              <span>{t("send")}</span>
+              <span style={{width: `${send * 16}px`}}>{t("send")}</span>
             </div>
             <div className="section-five_inside-contacts-right">
-              <span>{t("present")}</span>
-
+              <span style={{width: `${present * 16}px`}}>{t("present")}</span>
             </div>
           </div>
         </div>
