@@ -1,4 +1,6 @@
 import React from "react";
+import { m, motion } from "framer-motion";
+import { forwardRef } from "react";
 import { useTranslation } from "react-i18next";
 import first from "../../assets/first.svg";
 import second from "../../assets/second.svg";
@@ -8,33 +10,90 @@ import "./styles/sectionTwo.css";
 export default function SectionTwo() {
   const { t } = useTranslation();
 
+  const sectionAnimation = {
+    hidden:{
+      y: -200,
+      opacity:0,
+    },
+    visible: custom =>({
+      y:0,
+      opacity:1,
+      transition:{delay: custom * 0.3},
+    })
+
+  }
+  const blockAnimation = {
+    hidden:{
+      x:-1000,
+      opacity:0,
+      scale:2,
+
+    },
+    visible: custom =>({
+      x:0,
+      opacity:1,
+      scale:1,
+      transition:{
+        delay: custom * 0.5,
+        duration: 1.5,
+        type:"spring",
+        ease:"linear"
+        
+      },
+    })
+  }
+  const textAnimation = {
+    hidden:{
+      x:-1000,
+      opacity:0,
+
+    },
+    visible:({
+      x:0,
+      opacity:1,
+      transition:{
+        delay:1,
+        duration: 1,
+        type: 'tween',
+        ease:'linear'
+      },
+    })
+    
+  }
+  
+
   return (
-    <section className="section-two">
+    <motion.section 
+      className="section-two"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{amount:0.2, once:true}}
+    >
       <div id="about_us" className="section-two_inside">
         <div className="section-two_inside-block">
-          <h3>{t("business")}</h3>
-          <h2>{t("our")}</h2>
-          <div className="section-two_inside-images">
-            <div className="section-two_inside-images-left">
+          <motion.h3 custom={1} variants={sectionAnimation}>{t("business")}</motion.h3>
+          <motion.h2 custom={2} variants={sectionAnimation}>{t("our")}</motion.h2>
+          <div initial="hidden" whileInView="visible" viewport={{amount: 0.2, once:true}} className="section-two_inside-images">
+            <motion.div custom={1} variants={blockAnimation} className="section-two_inside-images-left">
               <img src={first} alt="" />
               <p>{t("presentation")}</p>
-            </div>
-            <div className="section-two_inside-images-center">
+            </motion.div>
+            <motion.div custom={2} variants={blockAnimation} className="section-two_inside-images-center">
               <img src={second} alt="" />
               <p>{t("support")}</p>
-            </div>
-            <div className="section-two_inside-images-right">
+            </motion.div>
+            <motion.div custom={3} variants={blockAnimation} className="section-two_inside-images-right">
               <img src={third} alt="" />
               <p>{t("target")}</p>
-            </div>
+            </motion.div>
           </div>
           <h3>{t("create_websites")}</h3>
-          <p className="itc-p">{t("itc")}</p>
-          <h3  className="gap">{t("funs")}</h3>
+          <p  className="itc-p">{t("itc")}</p>
+          <h3 className="gap">{t("funs")}</h3>
           <h5>{t("braves")}</h5>
           <p className="itc-p">{t("other")}</p>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
