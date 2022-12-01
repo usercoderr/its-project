@@ -44,7 +44,7 @@ header {
 }
 .header ul {
   display: flex;
-  width: 50%;
+  width: 40%;
   font-weight: 500;
   line-height: 2rem;
   font-size: 1.2rem;
@@ -127,4 +127,24 @@ footer {
   font-weight: 400;
   font-size: 1.12rem;
   line-height: 1.75rem;
+}
+
+
+@media screen and (max-width:1280px) {
+  .header ul {
+    width: 50%;
+  }
+}
+@media screen and (max-width:1024px) {
+  .header ul {
+    width: 55%;
+  }
+  .header {
+    margin: 30px 60px;
+  }
+  .footer-logo {
+    display: flex;
+    width: 20%;
+    justify-content: flex-start;
+  }
 }

@@ -41,7 +41,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="copyright">
-        <p>Copyright © 2022 ITS Technologies LLC.</p>
+        <p>© ITS Technologies LLC - 2022</p>
       </div>
     </footer>
   );

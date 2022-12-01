@@ -42,3 +42,18 @@
   align-items: center;
   height:auto;
 }
+
+
+
+@media screen and (max-width:1366px) {
+  .section-four_inside-block h3 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
+@media screen and (max-width:1280px) {
+  .section-four_inside-block h3 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
