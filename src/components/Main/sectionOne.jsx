@@ -7,7 +7,7 @@ import "./styles/sectionOne.css";
 export default function SectionOne() {
   const spanVariants = {
     hidden:{
-      x: -1000,
+      x: -100,
       opacity: 0,
     },
     visible:{
@@ -18,7 +18,7 @@ export default function SectionOne() {
   }
   const headingVariants ={
     hidden:{
-      x: -500,
+      x: -200,
       opacity: 0,
     },
     visible:{
@@ -37,7 +37,7 @@ export default function SectionOne() {
   }
   const blockVariants = {
     hidden:{
-      x:1000,
+      x:100,
       opacity:0
     },
     visible:{
@@ -56,7 +56,7 @@ export default function SectionOne() {
             animate={'visible'}
             transition={{
               delay:1,
-              duration:1.5,
+              duration:1,
             }}
             variants={spanVariants}
           >
@@ -67,7 +67,7 @@ export default function SectionOne() {
             animate={'visible'}
             transition={{
               delay:1,
-              duration:1.5,
+              duration:1.2,
           }}
           variants={headingVariants}
 
@@ -79,7 +79,7 @@ export default function SectionOne() {
             animate={'visible'}
             transition={{
               delay:0.5,
-              duration:2
+              duration:1.5
             }}
             variants={linkVariants}
             whileHover={{
@@ -91,7 +91,6 @@ export default function SectionOne() {
             <span>
               {t("send")}
             </span>
-            <div className="border-line-button"></div>
           </motion.div>
         </div>
         <motion.div 
