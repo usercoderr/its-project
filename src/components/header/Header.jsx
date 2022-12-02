@@ -95,50 +95,50 @@ export default function Header() {
           </a>
         </ul>
 
-
-        <NavLinksContainer>
-          <MenuToggle isOpen={isOpen} toggle={() => setOpen(!isOpen)} />
-          {isOpen && (
-            <div className="burger-container">
-              <LinksWrapper>
-                <LinkItem>
-                  <Link onClick={() => setOpen(!isOpen)}>
-                    <a href="#" onClick={() => setOpen(!isOpen)}>
-                      <li>{t("main")}</li>
-                    </a>
-                  </Link>
-                </LinkItem>
-                <LinkItem>
-                  <Link onClick={() => setOpen(!isOpen)}>
-                    <a href="#about_us" onClick={() => setOpen(!isOpen)}>
-                      <li>{t("about_us")}</li>
-                    </a>
-                  </Link>
-                </LinkItem>
-                <LinkItem>
-                  <Link onClick={() => setOpen(!isOpen)}>
-                    <a href="#portfolio" onClick={() => setOpen(!isOpen)}>
-                      <li>{t("portfolio")}</li>
-                    </a>
-                  </Link>
-                </LinkItem>
-                <LinkItem>
-                  <Link onClick={() => setOpen(!isOpen)}>
-                    <a href="#contacts" onClick={() => setOpen(!isOpen)}>
-                      <li>{t("contacts")}</li>
-                    </a>
-                  </Link>
-                </LinkItem>
-                <LinkItem>
-                  <Link href="#" className="langChageBurger">
-                    <Lang />
-                  </Link>
-                </LinkItem>
-              </LinksWrapper>
-            </div>
-          )}
-        </NavLinksContainer>
-
+        <div className="buger-menu__container">
+          <NavLinksContainer>
+            <MenuToggle isOpen={isOpen} toggle={() => setOpen(!isOpen)} />
+            {isOpen && (
+              <div className="burger-container">
+                <LinksWrapper>
+                  <LinkItem>
+                    <Link onClick={() => setOpen(!isOpen)}>
+                      <a href="#" onClick={() => setOpen(!isOpen)}>
+                        <li>{t("main")}</li>
+                      </a>
+                    </Link>
+                  </LinkItem>
+                  <LinkItem>
+                    <Link onClick={() => setOpen(!isOpen)}>
+                      <a href="#about_us" onClick={() => setOpen(!isOpen)}>
+                        <li>{t("about_us")}</li>
+                      </a>
+                    </Link>
+                  </LinkItem>
+                  <LinkItem>
+                    <Link onClick={() => setOpen(!isOpen)}>
+                      <a href="#portfolio" onClick={() => setOpen(!isOpen)}>
+                        <li>{t("portfolio")}</li>
+                      </a>
+                    </Link>
+                  </LinkItem>
+                  <LinkItem>
+                    <Link onClick={() => setOpen(!isOpen)}>
+                      <a href="#contacts" onClick={() => setOpen(!isOpen)}>
+                        <li>{t("contacts")}</li>
+                      </a>
+                    </Link>
+                  </LinkItem>
+                  <LinkItem>
+                    <Link href="#" className="langChageBurger">
+                      <Lang />
+                    </Link>
+                  </LinkItem>
+                </LinksWrapper>
+              </div>
+            )}
+          </NavLinksContainer>
+        </div>
 
         <div className="langChang">
           <Lang />
