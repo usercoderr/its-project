@@ -42,6 +42,10 @@ header {
   width: 84px;
   height: 73px;
 }
+.header a{
+
+  padding: 10px;
+}
 .header ul {
   display: flex;
   width: 40%;
