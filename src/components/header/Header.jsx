@@ -4,6 +4,7 @@ import logo from "../../assets/logo.svg";
 import { motion } from "framer-motion";
 import Lang from "../../features/Lang";
 import { type } from "@testing-library/user-event/dist/type";
+import { slide as Menu } from 'react-burger-menu';
 
 export default function Header() {
   const { t } = useTranslation();
@@ -48,7 +49,27 @@ export default function Header() {
             <li>{t("contacts")}</li>
           </a>
         </ul>
+        <Menu>
+          <a href="#" className="menu-item">
+            <li>{t("main")}</li>
+          </a>
+          <a href="#about_us" className="menu-item">
+            <li>{t("about_us")}</li>
+          </a>
+          <a href="#portfolio" className="menu-item">
+            <li>{t("portfolio")}</li>
+          </a>
+          <a href="#contacts" className="menu-item">
+            <li>{t("contacts")}</li>
+          </a>
+          <a className="menu-item">
+            <Lang/>
+          </a>
+        </Menu>
+        <div className="langChang">
+
         <Lang />
+        </div>
       </div>
     </header>
   );
