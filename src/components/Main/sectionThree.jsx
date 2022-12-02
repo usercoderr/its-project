@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import "./styles/sectionThree.css";
 
 export default function SectionThree() {
   const {t} = useTranslation()
+  
 
     const [isOpen, setOpen] = useState(false)
     const handleClick = () =>{

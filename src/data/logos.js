@@ -41,4 +41,74 @@ export const logos = [
         name:'first'
 
     },
+    {
+        id: 1,
+        img:plate,
+        name:'first'
+    },
+    {
+        id: 2,
+        img:hubilo,
+        name:'first'
+
+    },
+    {
+        id: 3,
+        img:getaround,
+        name:'first'
+
+    },
+    {
+        id: 4,
+        img:oyster,
+        name:'first'
+
+    },
+    {
+        id: 5,
+        img:notarize,
+        name:'first'
+
+    },
+    {
+        id: 6,
+        img:superPhone,
+        name:'first'
+
+    },
+    {
+        id: 1,
+        img:plate,
+        name:'first'
+    },
+    {
+        id: 2,
+        img:hubilo,
+        name:'first'
+
+    },
+    {
+        id: 3,
+        img:getaround,
+        name:'first'
+
+    },
+    {
+        id: 4,
+        img:oyster,
+        name:'first'
+
+    },
+    {
+        id: 5,
+        img:notarize,
+        name:'first'
+
+    },
+    {
+        id: 6,
+        img:superPhone,
+        name:'first'
+
+    },
 ]
