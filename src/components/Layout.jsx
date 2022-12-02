@@ -1,4 +1,5 @@
 import React from 'react'
+import Support from '../features/Support'
 import Footer from './footer/Footer'
 import Header from './header/Header'
 
@@ -10,6 +11,7 @@ export default function Layout() {
         <Header/>
         <Main/>
         <Footer/>
+        <Support/>
     </div>
   )
 }
