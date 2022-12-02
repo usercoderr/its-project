@@ -78,3 +78,33 @@
     justify-content: center;
     align-items: center;
 }
+
+@media screen and (max-width: 360px) {
+    .modal {
+        background: rgba(255, 255, 255, 0.18);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(13.5px);
+        -webkit-backdrop-filter: blur(13.5px);
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .modal {
+        background: rgba(255, 255, 255, 0.18);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(13.5px);
+        -webkit-backdrop-filter: blur(13.5px);
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .modal {
+        background: rgba(255, 255, 255, 0.18);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(13.5px);
+        -webkit-backdrop-filter: blur(13.5px);
+    }
+}
