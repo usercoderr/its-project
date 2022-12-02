@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: #f3f1ef;
+  overflow-x: hidden;
   margin: 0;
   padding: 100px 0px 150px 0px;
 }
@@ -32,7 +33,9 @@
   width: 100%;
   /* flex-wrap: wrap; */
   flex-direction: row;
+  white-space: nowrap;
   justify-content: space-between;
+  
 }
 .section-box{
   box-sizing: border-box;;
