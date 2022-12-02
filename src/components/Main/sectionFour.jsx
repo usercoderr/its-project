@@ -8,11 +8,11 @@ export default function SectionFour() {
   const {t} = useTranslation()
   const sliderVariants = {
     animate:{
-      x: [0, -1035],
+      x: [-190, -1035],
       transition:{
         x:{
           repeat:Infinity,
-          repeatType:"loop",
+          repeatType:"mirror",
           duration:20,
           ease:"linear",
           

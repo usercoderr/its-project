@@ -24,8 +24,8 @@ export default function Header() {
           initial="hidden"
           animate="visible"
           transition={{
-            delay: 0.7,
-            duration: 1,
+            delay: 0.1,
+            duration: 0.8,
             type: "spring",
           }}
           variants={logoVariants}
