@@ -70,11 +70,6 @@ export default function SectionOne() {
               duration: 0.5,
             }}
             variants={headingVariants}
-              delay:0.1,
-              duration:1,
-          }}
-          variants={headingVariants}
-
           >
             {t("digital")}</motion.h1>
           <motion.div
