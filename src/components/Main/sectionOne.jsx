@@ -56,7 +56,7 @@ export default function SectionOne() {
             animate={'visible'}
             transition={{
               delay:0.1,
-              duration:0.5,
+              duration:1,
             }}
             variants={spanVariants}
           >
@@ -67,7 +67,7 @@ export default function SectionOne() {
             animate={'visible'}
             transition={{
               delay:0.1,
-              duration:0.5,
+              duration:1,
           }}
           variants={headingVariants}
 
@@ -79,12 +79,12 @@ export default function SectionOne() {
             animate={'visible'}
             transition={{
               delay:0.1,
-              duration:0.7,
+              duration:1,
             }}
             variants={linkVariants}
             whileHover={{
               x:75,
-              scale:1.2,
+              rotateY:360,
             }}
           >
             <span>
@@ -98,7 +98,7 @@ export default function SectionOne() {
           animate={'visible'}
           transition={{
             delay:0.1,
-            duration:0.5,
+            duration:1,
           }}
           variants={blockVariants}
         >

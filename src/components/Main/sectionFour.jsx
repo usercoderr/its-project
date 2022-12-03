@@ -12,8 +12,8 @@ export default function SectionFour() {
       transition:{
         x:{
           repeat:Infinity,
-          repeatType:"mirror",
-          duration:20,
+          repeatType:"loop",
+          duration:6,
           ease:"linear",
           
         },

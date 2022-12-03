@@ -60,7 +60,23 @@ export default function SectionTwo() {
     })
     
   }
-  
+  const backgroundAnimation = {
+    hidden:{
+      background:'transparent'
+    },
+    animate:{
+      background:'green',
+      
+      transition:{
+        duration:4,
+        delay:1,
+        type:'tween'
+      }
+
+    }
+    
+   
+  }
 
   return (
     <motion.section 
@@ -87,7 +103,11 @@ export default function SectionTwo() {
               <p>{t("target")}</p>
             </motion.div>
           </div>
-          <h3>{t("create_websites")}</h3>
+          <motion.h3
+            initial='hidden'
+            animate='animate'
+            variants={backgroundAnimation}
+          >{t("create_websites")}</motion.h3>
           <p  className="itc-p">{t("itc")}</p>
           <h3 className="gap">{t("funs")}</h3>
           <h5>{t("braves")}</h5>
