@@ -1,13 +1,14 @@
-.support{
+.support {
     position: fixed;
     width: 60px;
     height: 60px;
-    bottom: 20px;
-    right: 20px;
+    bottom: 50px;
+    right: 40px;
     border-radius: 50%;
     background-color: #0099851A;
 }
-.support-inside{
+
+.support-inside {
     width: 100%;
     height: 100%;
     cursor: pointer;
@@ -15,22 +16,25 @@
     align-items: center;
     justify-content: center;
 }
-.support img{
-  display: flex;
+
+.support img {
+    display: flex;
 }
-.modal{
+
+.modal {
     position: fixed;
     bottom: 100px;
     border-radius: 10px;
-    right: 30px;
+    right: 40px;
+    bottom: 120px;
     width: 300px;
     height: 350px;
     background-color: white;
-    -webkit-box-shadow: -3px -3px 16px -1px #000; 
-box-shadow: -3px -3px 16px -1px #000;
-    
+    box-shadow: 1px 0px 20px -9px rgba(34, 60, 80, 0.2);
+
 }
-.modal-inside{
+
+.modal-inside {
     display: flex;
     width: 100%;
     height: 100%;
@@ -38,36 +42,69 @@ box-shadow: -3px -3px 16px -1px #000;
     align-items: center;
     flex-direction: column;
 }
-.modal-inside span{
+
+.modal-inside span {
     display: flex;
     width: 80%;
     align-items: center;
     margin: 0 auto;
     padding: 6px auto;
 }
-.modal-icons{
+
+.modal-icons {
     display: flex;
     width: 80%;
     flex-wrap: wrap;
-
     justify-content: space-between;
 }
-.icons{
+
+.icons {
     margin-top: 20px;
     display: flex;
     width: 80px;
     align-items: center;
     flex-direction: column;
-  
+
 }
-.icons p{
+
+.icons p {
     font-size: 0.8rem;
 }
 
-.phone{
+.phone {
     display: flex;
     width: 100%;
     margin: 20px;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 360px) {
+    .modal {
+        background: rgba(255, 255, 255, 0.18);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(13.5px);
+        -webkit-backdrop-filter: blur(13.5px);
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .modal {
+        background: rgba(255, 255, 255, 0.18);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(13.5px);
+        -webkit-backdrop-filter: blur(13.5px);
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .modal {
+        background: rgba(255, 255, 255, 0.18);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(13.5px);
+        -webkit-backdrop-filter: blur(13.5px);
+    }
 }
