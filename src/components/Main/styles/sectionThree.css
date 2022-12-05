@@ -16,7 +16,6 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .section-three_inside-block {
@@ -24,6 +23,10 @@
   flex-direction: column;
   width: 100%;
   align-items: center;
+}
+.button-cont {
+  display: flex;
+  justify-content: center;
 }
 
 .section-three_inside-block button {
@@ -64,7 +67,7 @@
 
 .angry-grid {
   display: grid;
-  width: 90%;
+  width: 100%;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   height: 100vh;
@@ -78,6 +81,7 @@
   background-position: center;
   grid-row: 1 / 3;
   grid-column: 1;
+  background-size: cover;
 }
 
 #item-1 {
@@ -85,6 +89,7 @@
   object-fit: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 #item-2 {
@@ -92,6 +97,7 @@
   background-repeat: no-repeat;
   background-position: center;
   object-fit: cover;
+  background-size: cover;
 }
 
 #item-3 {
@@ -99,6 +105,7 @@
   background-repeat: no-repeat;
   background-position: center;
   object-fit: cover;
+  background-size: cover;
 }
 
 #item-4 {
@@ -106,6 +113,7 @@
   background-repeat: no-repeat;
   background-position: center;
   object-fit: cover;
+  background-size: cover;
 }
 
 #item-5 {
@@ -113,6 +121,7 @@
   background-repeat: no-repeat;
   background-position: center;
   object-fit: cover;
+  background-size: cover;
 }
 
 #item-6 {
@@ -120,6 +129,7 @@
   background-repeat: no-repeat;
   background-position: center;
   object-fit: cover;
+  background-size: cover;
 }
 
 #item-7 {
@@ -127,6 +137,7 @@
   background-repeat: no-repeat;
   background-position: center;
   object-fit: cover;
+  background-size: cover;
 }
 
 .carousel {

@@ -83,7 +83,9 @@ export default function SectionThree() {
             <br />
             {
               !isOpen &&
-              <button onClick={handleClick}>{t("showButton")}</button>
+              <div className="button-cont">
+                <button onClick={handleClick}>{t("showButton")}</button>
+              </div>
             }
             {
               isOpen ?
@@ -107,7 +109,9 @@ export default function SectionThree() {
             <br />
             {
               isOpen &&
-              <button onClick={handleClick}>{t("hiddenButton")}</button>
+              <div className="button-cont">
+                <button onClick={handleClick}>{t("hiddenButton")}</button>
+              </div>
             }
 
           </div>
