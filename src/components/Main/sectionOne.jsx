@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import sectionOne from "../../assets/sectionOne.svg";
 import "./styles/sectionOne.css";
+import styled from "styled-components";
 
 export default function SectionOne() {
   const spanVariants = {
@@ -81,13 +82,18 @@ export default function SectionOne() {
               duration: 0.7,
               delay:0.1,
               duration:1,
+              type:'spring',
+              stiffness:120
             }}
             variants={linkVariants}
             whileHover={{
-              x: 75,
+              originX:0,
               scale: 1.2,
-              x:75,
-              rotateY:360,
+              transition:{
+                duration:0.2,
+                type:'spring',
+                stiffness:120
+              }
             }}
           >
             <span>

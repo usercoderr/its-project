@@ -18,7 +18,12 @@ export default function SectionTwo() {
     visible: custom =>({
       y:0,
       opacity:1,
-      transition:{delay: custom * 0.3},
+      transition:{
+        delay: custom * 0.3,
+        type:'spring',
+        stiffness:120,
+
+      },
     })
 
   }
@@ -37,6 +42,7 @@ export default function SectionTwo() {
         delay: custom * 0.5,
         duration: 1.5,
         type:"spring",
+        stiffness:90,
         ease:"linear"
         
       },
@@ -61,18 +67,13 @@ export default function SectionTwo() {
     
   }
   const backgroundAnimation = {
-    hidden:{
-      background:'transparent'
-    },
-    animate:{
-      background:'green',
-      
-      transition:{
-        duration:4,
-        delay:1,
-        type:'tween'
-      }
+    active:{
+      backgroundColor: "green"
 
+    },
+    inactive:{
+      backgroundColor: "transparent",
+      transition: { duration: 2 }      
     }
     
    
@@ -104,8 +105,7 @@ export default function SectionTwo() {
             </motion.div>
           </div>
           <motion.h3
-            initial='hidden'
-            animate='animate'
+            animate='active'
             variants={backgroundAnimation}
           >{t("create_websites")}</motion.h3>
           <p  className="itc-p">{t("itc")}</p>
