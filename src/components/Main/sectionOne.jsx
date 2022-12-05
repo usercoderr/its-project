@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import sectionOne from "../../assets/sectionOne.svg";
+import sectionOne from "../../assets/mainBanner.png";
 import "./styles/sectionOne.css";
 import styled from "styled-components";
 
