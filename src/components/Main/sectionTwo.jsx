@@ -66,19 +66,7 @@ export default function SectionTwo() {
     })
     
   }
-  const backgroundAnimation = {
-    active:{
-      backgroundColor: "green"
-
-    },
-    inactive:{
-      backgroundColor: "transparent",
-      transition: { duration: 2 }      
-    }
-    
-   
-  }
-
+  
   return (
     <motion.section 
       className="section-two"
@@ -105,8 +93,6 @@ export default function SectionTwo() {
             </motion.div>
           </div>
           <motion.h3
-            animate='active'
-            variants={backgroundAnimation}
           >{t("create_websites")}</motion.h3>
           <p  className="itc-p">{t("itc")}</p>
           <h3 className="gap">{t("funs")}</h3>
