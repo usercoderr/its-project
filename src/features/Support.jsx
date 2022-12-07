@@ -8,14 +8,11 @@ import message from "../assets/message.svg";
 import closed from "../assets/icon-close.svg";
 import "./support.css";
 
-export default function Support() {
-  const [isOpen, setOpen] = useState();
-  const handleClickModal = () => {
-    setOpen(!isOpen)
-  }
+export default function Support({isOpen, setOpen, onClick}) {
+
   return (
     <>
-      <div onClick={handleClickModal} className="support">
+      <div onClick={onClick} className="support">
         <div className="support-inside">
          { isOpen ?  
          <img src={message} alt="" />
