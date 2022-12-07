@@ -6,7 +6,7 @@ import Main from './Main/Main'
 
 
 export default function Layout() {
-  const [isOpen, setOpen] = useState();
+  const [isOpen, setOpen] = useState(true);
   const handleClickModal = () => {
     setOpen(!isOpen)
   }
