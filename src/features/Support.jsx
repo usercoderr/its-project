@@ -4,6 +4,8 @@ import { BsWhatsapp } from 'react-icons/bs'
 import { BsFillTelephoneFill } from 'react-icons/bs'
 import { GrMail } from 'react-icons/gr'
 import message from "../assets/message.svg";
+
+import closed from "../assets/icon-close.svg";
 import "./support.css";
 
 export default function Support() {
@@ -15,11 +17,16 @@ export default function Support() {
     <>
       <div onClick={handleClickModal} className="support">
         <div className="support-inside">
-          <img src={message} alt="" />
+         { isOpen ?  
+         <img src={message} alt="" />
+:
+<img src={closed}   alt="" />
+
+         }
         </div>
       </div>
       {
-        isOpen && <div className="modal">
+        !isOpen && <div className="modal">
           <div className="modal-inside">
             <h3>Напишите нам</h3>
             <div className="modal-icons">
