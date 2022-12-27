@@ -11,11 +11,13 @@ export default function Layout() {
     setOpen(!isOpen)
   }
   return (
-    <div onClick={handleClickModal} className='page'>
-      <Header />
-      <Main />
-      <Footer />
+    <>
+      <div onClick={() => setOpen(true)} className='page'>
+        <Header />
+        <Main />
+        <Footer />
+      </div>
       <Support isOpen={isOpen} setOpen={setOpen} onClick={handleClickModal} />
-    </div>
+    </>
   )
 }
